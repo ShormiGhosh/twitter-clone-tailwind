@@ -8,16 +8,18 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-sky-600: oklch(58.8% 0.158 241.966);
+    --color-sky-900: oklch(39.1% 0.09 240.876);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-pink-700: oklch(52.5% 0.223 3.958);
+    --color-pink-900: oklch(40.8% 0.153 2.432);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
@@ -571,17 +573,17 @@
       }
     }
   }
+  .hover\:bg-blue-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-900);
+      }
+    }
+  }
   .hover\:bg-gray-300 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-300);
-      }
-    }
-  }
-  .hover\:bg-gray-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-700);
       }
     }
   }
@@ -592,10 +594,31 @@
       }
     }
   }
+  .hover\:bg-green-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-800);
+      }
+    }
+  }
+  .hover\:bg-pink-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-pink-900);
+      }
+    }
+  }
   .hover\:bg-sky-600 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-sky-600);
+      }
+    }
+  }
+  .hover\:bg-sky-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sky-900);
       }
     }
   }
@@ -656,10 +679,6 @@
 }
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  user-select: none;
-}
-.material-symbols-outlined[style*="font-size"] {
-  font-size: inherit !important;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
