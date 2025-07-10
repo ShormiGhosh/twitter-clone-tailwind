@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,10 +15,12 @@
     <title>Home / X</title>
   </head>
   <body class="bg-black text-white">
-    <div class="container mx-auto">
+    <div class="md:container mx-auto">
       <div class="flex">
-        <div class="first w-[80%] sticky top-0">
-          <div class="logo my-4 mx-auto">
+        <div class="first w-16 md:w-[80%]">
+          
+          <div class="sidebar flex md:items-end flex-col  sticky top-0">
+            <div class="logo my-4 mx-auto">
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -30,22 +33,21 @@
               </g>
             </svg>
           </div>
-          <div class="sidebar flex justify-end">
-            <ul class="flex flex-col text-xl px-18">
+            <ul class="flex flex-col text-xl md:px-18">
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl"> home </span
                 ><span class="font-bold hidden md:block">Home</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl"> search </span
                 ><span class=" hidden md:block">Explore</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl relative">
                   notifications</span
@@ -53,38 +55,38 @@
                 <span class=" hidden md:block">Notifications</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl"> mail</span
                 ><span class=" hidden md:block">Messages</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl"
                   >public_off</span
                 ><span class=" hidden md:block">Grok</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl">group</span
                 ><span class=" hidden md:block">Communities</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl"> close</span
                 ><span class=" hidden md:block">Premium</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl">person</span
                 ><span class=" hidden md:block">Profile</span>
               </li>
               <li
-                class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
+                class="flex justify-center items-center gap-3 hover:bg-[#151515] hover:rounded-full md:justify-start md:w-fit hover:cursor-pointer px-4 py-3"
               >
                 <span class="material-symbols-outlined text-3xl"> pending </span
                 ><span class=" hidden md:block">More</span>
@@ -96,7 +98,7 @@
               </button>
               
             </ul>
-          </div>
+        
            <div
                   class="img_live flex items-center gap-4 my-10 justify-end mx-3 hover:rounded-full hover:cursor-pointer hover:bg-[#151515] p-2"
                 >
@@ -114,10 +116,10 @@
                   </div>
                   <span class="material-symbols-outlined text-gray-500 w-8 h-8 p-1 align-middle"> more_horiz </span
                 >
-                </div>
+                </div>  </div>
         </div>
-        <div class="second w-full border-[1px] border-x-gray-400 border-y-black">
-          <div class="top flex p-3 relative">
+        <div class="second w-full border-[1px] border-x-gray-700 border-y-black">
+          <div class="top flex p-3 sticky top-0 bg-black backdrop-blur-3xl opacity-50">
             <div class="under absolute bg-[#1d9bf0] h-1 w-12 bottom-0 left-[21%]"></div>
             <div class="left w-1/2 flex justify-center font-bold text-lg hover:cursor-pointer"> For you </div>
             <div class="righ w-1/2 flex justify-center text-lg text-gray-500">Following</div>
@@ -194,14 +196,46 @@ upload
              </div>
          </div>
           <div class="h-[1px] bg-gray-700 w-full"></div>
+          <div class="post flex items-center px-5 py-2 ">
+              <div class="img">
+<img src="https://pbs.twimg.com/profile_images/1936002956333080576/kqqe2iWO_400x400.jpg" alt="" draggable="true" class=" w-10 h-10 rounded-full" />
+              </div>
+              <div class="content mx-3 "><span class="font-bold hover:underline hover:cursor-pointer">Elon Musk</span><span class="text-gray-400"> @elonmusk · 12h</span> </div>
+            </div>
+            <span class="mx-10 py-2">
+Grok 4 is at the point where it essentially never gets math/physics exam questions wrong, unless they are skillfully adversarial. 
+It can identify errors or ambiguities in questions, then fix the error in the question or answer each variant of an ambiguous question.</span>
+             <div class="reaction flex justify-between items-center gap-5 my-4 ml-8 text-gray-500">
+              <div class="flex items-center hover:cursor-pointer hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-sky-900">
+mode_comment
+</span><span class="mx-2">127</span></div>
+<div class="flex items-center hover:cursor-pointer hover:text-green-700"><span class="material-symbols-outlined hover:rounded-full">
+repeat
+</span><span class="mx-2">159</span></div>
+<div class="flex items-center hover:cursor-pointer hover:text-pink-700"><span class="material-symbols-outlined hover:rounded-full">
+favorite
+</span><span class="mx-2">1.2K</span></div>
+<div class="flex items-center hover:cursor-pointer  hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full ">
+bar_chart
+</span><span class="mx-2">24K</span></div>
+<div class="flex items-center hover:cursor-pointer  hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full">
+bookmark
+</span><span class="material-symbols-outlined">
+upload
+</span>
+             </div>
+         </div>
+          <div class="h-[1px] bg-gray-700 w-full"></div>
            <div class="post flex items-center px-5 py-2 ">
               <div class="img">
-<img src="https://pbs.twimg.com/profile_images/1909442790343520256/b73WUiEq_400x400.png" alt="" draggable="true" class=" w-10 h-10 rounded-full" />
+<img src="https://pbs.twimg.com/profile_images/1942616790275678208/6-8ZUkWx_400x400.jpg" alt="" draggable="true" class=" w-10 h-10 rounded-full" />
               </div>
-              <div class="content mx-3 "><span class="font-bold hover:underline hover:cursor-pointer">CoinGecko</span><span class="text-gray-400"> @coingecko · 2h</span> </div>
+              <div class="content mx-3 "><span class="font-bold hover:underline hover:cursor-pointer">vinod</span><span class="text-gray-400"> @ZDVsvino · 3h</span> </div>
             </div>
-            <span class="mx-10 py-2">JUST IN: Bitcoin reaches a new ATH of $112,681</span>
-            <img src="https://pbs.twimg.com/media/GvgsKjVXoAEMc2s?format=jpg&name=small"
+            <span class="mx-10 py-2">AI Restoration That Feels Like Magic
+
+Revive faces, fix flaws, and enhance every pixel with cutting-edge neural repair.</span>
+            <img src="https://pbs.twimg.com/media/Gva-QRWbIAApMho?format=png&name=900x900"
              alt="" class=" rounded-2xl mx-10 hover:cursor-pointer">
              <div class="reaction flex justify-between items-center gap-5 my-4 ml-8 text-gray-500">
               <div class="flex items-center hover:cursor-pointer hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-sky-900">
@@ -226,12 +260,12 @@ upload
           <div class="h-[1px] bg-gray-700 w-full"></div>
            <div class="post flex items-center px-5 py-2 ">
               <div class="img">
-<img src="https://pbs.twimg.com/profile_images/1909442790343520256/b73WUiEq_400x400.png" alt="" draggable="true" class=" w-10 h-10 rounded-full" />
+<img src="https://pbs.twimg.com/profile_images/1831027715610152960/TG7yxTo6_400x400.jpg" alt="" draggable="true" class=" w-10 h-10 rounded-full" />
               </div>
-              <div class="content mx-3 "><span class="font-bold hover:underline hover:cursor-pointer">CoinGecko</span><span class="text-gray-400"> @coingecko · 2h</span> </div>
+              <div class="content mx-3 "><span class="font-bold hover:underline hover:cursor-pointer">Rozarion</span><span class="text-gray-400"> @razariongame · 2h</span> </div>
             </div>
-            <span class="mx-10 py-2">JUST IN: Bitcoin reaches a new ATH of $112,681</span>
-            <img src="https://pbs.twimg.com/media/GvgsKjVXoAEMc2s?format=jpg&name=small"
+            <span class="mx-10 py-2">A new multiplayer, open-world RTS game built with Babylon.js & WebGL is now in Alpha! Play instantly in your browser—no install needed. Join the community and shape the future of this open-source project!</span>
+            <img src="https://pbs.twimg.com/media/GvW-SgeWEAAX-pB?format=jpg&name=small"
              alt="" class=" rounded-2xl mx-10 hover:cursor-pointer">
              <div class="reaction flex justify-between items-center gap-5 my-4 ml-8 text-gray-500">
               <div class="flex items-center hover:cursor-pointer hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-sky-900">
@@ -254,39 +288,10 @@ upload
              </div>
          </div>
           <div class="h-[1px] bg-gray-700 w-full"></div>
-           <div class="post flex items-center px-5 py-2 ">
-              <div class="img">
-<img src="https://pbs.twimg.com/profile_images/1909442790343520256/b73WUiEq_400x400.png" alt="" draggable="true" class=" w-10 h-10 rounded-full" />
-              </div>
-              <div class="content mx-3 "><span class="font-bold hover:underline hover:cursor-pointer">CoinGecko</span><span class="text-gray-400"> @coingecko · 2h</span> </div>
-            </div>
-            <span class="mx-10 py-2">JUST IN: Bitcoin reaches a new ATH of $112,681</span>
-            <img src="https://pbs.twimg.com/media/GvgsKjVXoAEMc2s?format=jpg&name=small"
-             alt="" class=" rounded-2xl mx-10 hover:cursor-pointer">
-             <div class="reaction flex justify-between items-center gap-5 my-4 ml-8 text-gray-500">
-              <div class="flex items-center hover:cursor-pointer hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-sky-900">
-mode_comment
-</span><span class="mx-2">127</span></div>
-<div class="flex items-center hover:cursor-pointer hover:text-green-700"><span class="material-symbols-outlined hover:rounded-full">
-repeat
-</span><span class="mx-2">159</span></div>
-<div class="flex items-center hover:cursor-pointer hover:text-pink-700"><span class="material-symbols-outlined hover:rounded-full">
-favorite
-</span><span class="mx-2">1.2K</span></div>
-<div class="flex items-center hover:cursor-pointer  hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full ">
-bar_chart
-</span><span class="mx-2">24K</span></div>
-<div class="flex items-center hover:cursor-pointer  hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full">
-bookmark
-</span><span class="material-symbols-outlined">
-upload
-</span>
-             </div>
-         </div>
-          <div class="h-[1px] bg-gray-700 w-full"></div>
+           
         </div>
         </div>
-        <div class=" third w-full sticky top[50vh]">
+        <div class="hidden md:block third w-full">
           <div
             class="search m-5 px-2 py-1.5 rounded-full w-[65%] border-gray-500 border-[1px] has-focus-visible:border-[#1d9bf0]"
           >
@@ -323,7 +328,7 @@ upload
           </div>
           <div class="trending">
             <div
-              class="trends rounded-2xl border-[1px] w-[65%] border-gray-500 m-5 px-2 py-1.5"
+              class="trends rounded-2xl border-[1px] w-[65%] border-gray-500 m-5 px-2 py-1.5 "
             >
               <div class="flex flex-col justify-start m-3">
                 <span
