@@ -47,9 +47,10 @@
               <li
                 class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
               >
-                <span class="material-symbols-outlined text-3xl">
+                <span class="material-symbols-outlined text-3xl relative">
                   notifications</span
-                ><span class="">Notifications</span>
+                ><span class="absolute z-10 text-[8px] flex justify-center rounded-full w-6 mb-4 py-0 bg-[#1d9bf0] text-white">19+</span>
+                <span class="">Notifications</span>
               </li>
               <li
                 class="flex justify-start items-center gap-3 hover:bg-[#151515] hover:rounded-full w-fit hover:cursor-pointer px-4 py-3"
@@ -118,7 +119,7 @@
         <div class="second w-full border-[1px] border-x-gray-400 border-y-black">
           <div class="top flex p-3 relative">
             <div class="under absolute bg-[#1d9bf0] h-1 w-12 bottom-0 left-[21%]"></div>
-            <div class="left w-1/2 flex justify-center font-bold text-lg"> For you </div>
+            <div class="left w-1/2 flex justify-center font-bold text-lg hover:cursor-pointer"> For you </div>
             <div class="righ w-1/2 flex justify-center text-lg text-gray-500">Following</div>
             <div class="setting mx-2"><span class="material-symbols-outlined text-gray-500">settings</span></div>
           </div>
@@ -131,13 +132,64 @@
             <input type="text" placeholder="What's happening?" class="w-full bg-transparent text-gray-400 text-2xl gap-3 px-5 outline-none" />
           </div>
           </div>
-          <div class="flex ml-16 px-2 py-3 text-[#1d9bf0] font-bold gap-2"><span class="material-symbols-outlined">globe</span><span>Everyone can reply</span></div>
+          <div class="flex ml-16 px-2 py-3 text-[#1d9bf0] font-bold gap-2 hover:cursor-pointer hover:text-blue-900"><span class="material-symbols-outlined">globe</span><span>Everyone can reply</span></div>
+           <div class="h-[1px] bg-gray-700 w-[80%] mx-16"></div>
+           <div class="icons flex  items-center gap-2.5 text-[#1d9bf0] ml-16  px-2 py-3">
+            <span class="material-symbols-outlined hover:cursor-pointer hover:text-blue-900">
+wallpaper
+</span>
+<span class="material-symbols-outlined hover:cursor-pointer hover:text-blue-900">
+gif_box
+</span>
+<span class="material-symbols-outlined hover:cursor-pointer hover:text-blue-900">
+public_off
+</span>
+<span class="material-symbols-outlined hover:cursor-pointer hover:text-blue-900">
+ballot
+</span>
+<span class="material-symbols-outlined hover:cursor-pointer hover:text-blue-900">
+sentiment_satisfied
+</span>
+<span class="material-symbols-outlined hover:cursor-pointer hover:text-blue-900">
+overview
+</span>
+<span class="material-symbols-outlined hover:cursor-pointer hover:text-blue-900">
+location_on
+</span>
+<button class="post hover:cursor-pointer hover:bg-gray-300 bg-white font-bold text-sm text-black rounded-full py-2 px-7 ml-28">
+                Post
+              </button>
+           </div>
           <div class="h-[1px] bg-gray-700 w-full"></div>
           <span class="flex justify-center items-center font-bold py-5 text-[#1d9bf0] hover:bg-[#151515] hover:cursor-pointer">Show 525 posts</span>
           <div class="h-[1px] bg-gray-700 w-full"></div>
+          <div class="posts flex flex-col space-y-1">
+            <div class="post flex items-center px-5 py-2 ">
+              <div class="img">
+<img src="https://pbs.twimg.com/profile_images/1909442790343520256/b73WUiEq_400x400.png" alt="" draggable="true" class=" w-10 h-10 rounded-full" />
+              </div>
+              <div class="content mx-3 "><span class="font-bold hover:underline hover:cursor-pointer">CoinGecko</span><span class="text-gray-400"> @coingecko · 2h</span> </div>
+            </div>
+            <span class="mx-10 py-2">JUST IN: Bitcoin reaches a new ATH of $112,681</span>
+            <img src="https://pbs.twimg.com/media/GvgsKjVXoAEMc2s?format=jpg&name=small"
+             alt="" class=" rounded-2xl mx-10 hover:cursor-pointer"></div>
+             <div class="reaction flex justify-between items-center gap-5 my-4 ml-8 text-gray-500">
+              <div class="flex items-center hover:cursor-pointer hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-sky-900">
+mode_comment
+</span><span class="mx-2">127</span></div>
+<div class="flex items-center hover:cursor-pointer hover:text-green-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-green-800">
+repeat
+</span><span class="mx-2">159</span></div>
+<div class="flex items-center hover:cursor-pointer hover:text-pink-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-pink-900">
+favorite
+</span><span class="mx-2">1.2K</span></div>
+<div class="flex items-center hover:cursor-pointer  hover:text-blue-700"><span class="material-symbols-outlined hover:rounded-full hover:bg-blue-900">
+bar_chart
+</span><span class="mx-2">24K</span></div>
+             </div>
          
         </div>
-        <div class=" thirdw-full sticky top[50vh]">
+        <div class=" third w-full sticky top[50vh]">
           <div
             class="search m-5 px-2 py-1.5 rounded-full w-[65%] border-gray-500 border-[1px] has-focus-visible:border-[#1d9bf0]"
           >
