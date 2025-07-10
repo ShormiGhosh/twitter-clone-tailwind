@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Custom styles for Material Icons */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+/* Force icon size */
+.material-symbols-outlined[style*="font-size"] {
+  font-size: inherit !important;
+}
